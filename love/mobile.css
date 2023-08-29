@@ -223,7 +223,7 @@
 }
   .giftbox {
   position: relative;
-  width: 30%;
+  width: 40%;
   height: 100%;
 }
   .giftbox .img {
@@ -234,11 +234,11 @@
   z-index: 100;
 }
 .giftbox img {
-  width: 120%;
+  width: 70%;
 }
   .textLetter {
   position: relative;
-  width: 70%;
+  width: 60%;
   flex-direction: column;
   display: flex;
   align-items: center;
