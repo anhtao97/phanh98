@@ -182,7 +182,7 @@
   border-radius: 5px;
   padding: 0px 10px;
   font-family: "Dancing Script", cursive;
-  font-size: 15px;
+  font-size: 10px;
   z-index: 11;
   opacity: 0;
   animation: boxSlider 1s 9s forwards ease-out;
