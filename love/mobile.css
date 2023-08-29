@@ -234,11 +234,11 @@
   z-index: 100;
 }
 .giftbox img {
-  width: 80%;
+  width: 120%;
 }
   .textLetter {
   position: relative;
-  width: 60%;
+  width: 70%;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -253,7 +253,7 @@
 .textLetter .contentLetter {
   font-size: 15px;
   text-align: center;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 5px 0px 20px;
   margin-top: 10px;
   /* font-family: "Dancing Script", cursive; */
 }
