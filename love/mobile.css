@@ -155,4 +155,23 @@
     height: 100%;
     object-fit: cover;
   }
+  .boxCar {
+  position: absolute;
+  bottom: 15%;
+  transform: translateX(-400px);
+  z-index: 2;
+  animation: car 4s 1s forwards, car1 2s 5s forwards;
+}
+.boxCar img {
+  width: 350px;
+}
+@keyframes car {
+  0% {
+    transform: translateX(-400px);
+  }
+  50%,
+  100% {
+    transform: translateX(30px);
+  }
+}
 }
