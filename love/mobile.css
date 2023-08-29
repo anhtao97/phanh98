@@ -182,7 +182,7 @@
   border-radius: 5px;
   padding: 0px 10px;
   font-family: "Dancing Script", cursive;
-  font-size: 18px;
+  font-size: 17px;
   z-index: 11;
   opacity: 0;
   animation: boxSlider 1s 9s forwards ease-out;
@@ -218,7 +218,7 @@
   background-color: rgb(255, 62, 65);
   transform: scale(0.2) rotate(45deg);
   bottom: 20%;
-  left: 350px;
+  left: 340px;
   z-index: 1;
 }
 }
