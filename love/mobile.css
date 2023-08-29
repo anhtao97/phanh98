@@ -1,0 +1,158 @@
+@media (max-width: 768px) {
+  .formInput {
+    /* position: absolute; */
+    /* top: -100%;
+    width: 40%;
+    left: 50%;
+    transform: translateX(-50%); */
+    background-color: #ea4c89;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 70;
+    border-radius: 20px;
+    transition: 1s;
+    overflow: hidden;
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    animation: formInput 1s 3s forwards;
+  }
+  @keyframes formInput {
+    0% {
+      top: -100%;
+    }
+    100% {
+      top: 20px;
+    }
+  }
+  .formInput::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 40px;
+    background: #ea4c89;
+    top: -30px;
+    left: 20%;
+    z-index: -10;
+  }
+  .formInput::after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 40px;
+    background: #ea4c89;
+    top: -30px;
+    right: 20%;
+    z-index: -1;
+  }
+  .boxHands {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: -40%;
+    animation: handsCat 1s 4s forwards ease-in;
+  }
+  @keyframes handsCat {
+    0% {
+      top: -40%;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+  .formInput .handsCat {
+    position: absolute;
+    transform: rotate(180deg);
+    width: 80px;
+    top: -60px;
+    animation: hands 1s 5s forwards ease-in-out;
+  }
+  @keyframes hands {
+    0% {
+      top: -60px;
+    }
+    50%,
+    100% {
+      top: -150px;
+    }
+  }
+  .handsCat img {
+    width: 100%;
+  }
+  .boxHands h1 {
+    transform: rotate(20deg);
+    transform-origin: top left;
+    padding-top: 5px;
+    color: #fff;
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
+    animation: textHand 1.5s 6s forwards ease-in;
+  }
+  @keyframes textHand {
+    0% {
+      transform: rotate(20deg);
+      transform-origin: top left;
+    }
+    20%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: top left;
+    }
+  }
+  .boxSlider {
+    position: relative;
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: 1s;
+    animation: boxSlider 1s 8s forwards ease-out;
+  }
+  @keyframes boxSlider {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .boxSlider .left,
+  .boxSlider .right {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 50;
+  }
+  .left {
+    left: 10%;
+  }
+  .right {
+    right: 10%;
+  }
+
+  .listSlider {
+    position: relative;
+    width: 200px;
+    height: 180px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .listSlider .slider {
+    width: 100%;
+    position: relative;
+    transition: 0.5s;
+  }
+  .listSlider img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+  }
+}
